@@ -126,7 +126,7 @@ class player:
 			self.automated_turn()
 
 class controlled_unit:
-	def __init__(self, name, color, coordinates, index, cooldown = 1, hp = 10, player):
+	def __init__(self, name, color, coordinates, index, cooldown = 1, hp = 10):
 		self.coordinates = coordinates
 		self.color = color
 		self.name = name
@@ -162,7 +162,7 @@ class controlled_unit:
 		print(self.coordinates, self.color, self.name, self.ammo, self.fuel, self.cooldown, self.fuel)
 
 	def can_move(self):
-		if cooldown = 0:
+		if self.cooldown == 0:
 			return True
 
 		return False

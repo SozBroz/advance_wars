@@ -4,8 +4,8 @@ import sys
 import csv
 from image_index import fetch_picture_symbol_dict, fetch_terrain_symbol_dict, fetch_movement_dict, fetch_unit_pictures_dict, fetch_unit_dict
 from aw_movement import fetch_movement_data
-from aw_units import fetch_unit_attributes_data, 
-from aw_class import player, fetch_unit_damage_data, controlled_unit, controllable_structure, controllable_co
+from aw_units import fetch_unit_attributes_data, fetch_unit_damage_data
+from aw_class import player, controlled_unit, controllable_structure, controllable_co
 from random import randint
 #damage calculator
 #f = [(b * s / 100) + r] * a/10 * (200 - (d + dtr * hp)) / 100
